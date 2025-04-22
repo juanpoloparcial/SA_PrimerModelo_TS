@@ -2,7 +2,7 @@ let modelo;
 
 const cargarModelo = async () => {
   // Cargamos el modelo con una "threshold" de 0.9 (confianza del 90%)
-  modelo = await toxicity.load(0.5);
+  modelo = await toxicity.load(0.9);
   console.log("Modelo de toxicidad cargado");
 };
 
