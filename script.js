@@ -28,12 +28,12 @@ const analizar = async () => {
   predicciones.forEach((pred) => {
     if (pred.results[0].match) {
       algunaToxica = true;
-      resultadoHTML += `<p><strong>${pred.label}</strong>: TOXICIDAD DETECTADA ✅</p>`;
+      resultadoHTML += `<p><strong>${pred.label}</strong>: TOXICIDAD DETECTADA </p>`;
     }
   });
 
   if (!algunaToxica) {
-    resultadoHTML += `<p>No se detectó toxicidad 👍</p>`;
+    resultadoHTML += `<p>No se detectó toxicidad </p>`;
   }
 
   resultadoDiv.innerHTML = resultadoHTML;
